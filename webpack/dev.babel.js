@@ -1,5 +1,7 @@
+/* eslint import/no-extraneous-dependencies: 0 */
 import webpack from 'webpack'
 import merge from 'webpack-merge'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 import webpackConfig from './base'
 
@@ -9,10 +11,14 @@ export default merge(webpackConfig, {
   devServer: {
     contentBase: './dist',
     port: 9000,
-    hot:true
+    hot: true,
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
-});
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'React Silicon Life',
+      template: 'index.html',
+    }),
+  ],
+})
