@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --progress --colors --config ./webpack/dev.babel.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "valentin d. pinkman <valentin.d.pinkman@icloud.com",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
