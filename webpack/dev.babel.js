@@ -1,12 +1,12 @@
-/* eslint import/no-extraneous-dependencies: 0 */
 import webpack from 'webpack'
 import merge from 'webpack-merge'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-import webpackConfig from './base'
+import webpackBaseConfig from './base'
 
-export default merge(webpackConfig, {
+export default merge(webpackBaseConfig, {
   entry: ['react-hot-loader/patch'],
+
+  devtool: 'inline-source-map',
 
   devServer: {
     contentBase: './dist',
@@ -15,11 +15,5 @@ export default merge(webpackConfig, {
     hot: true,
   },
 
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'React Silicon Life',
-      template: 'index.html',
-    }),
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 })
