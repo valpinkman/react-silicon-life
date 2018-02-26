@@ -1,23 +1,24 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 
-import reducer from './reducers'
+import reducers from './reducers'
 
+/* eslint-disable no-underscore-dangle */
 const devTools =
-  // eslint-disable-next-line no-underscore-dangle
   process.browser && window.__REDUX_DEVTOOLS_EXTENSION__
-    ? window.__REDUX_DEVTOOLS_EXTENSION__() /* eslint-disable-line no-underscore-dangle */
+    ? window.__REDUX_DEVTOOLS_EXTENSION__()
     : f => f
+/* eslint-enable no-underscore-dangle */
 
 export default initialState => {
   const middlewares = [thunk]
   const enhancers = compose(applyMiddleware(...middlewares), devTools)
 
-  const store = createStore(reducer, initialState, enhancers)
+  const store = createStore(reducers, initialState, enhancers)
 
   if (module.hot) {
     module.hot.accept('./reducers', () => {
-      const nextRootReducer = reducer
+      const nextRootReducer = require('./reducers/index')
       store.replaceReducer(nextRootReducer)
     })
   }

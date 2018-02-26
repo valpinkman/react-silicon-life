@@ -10,6 +10,7 @@ export default merge(webpackConfig, {
 
   devServer: {
     contentBase: './dist',
+    historyApiFallback: true,
     port: 9000,
     hot: true,
   },

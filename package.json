@@ -4,7 +4,8 @@
   "description": "minimal react starter",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --config ./webpack/dev.babel.js"
+    "start": "webpack-dev-server --progress --colors --config ./webpack/dev.babel.js",
+    "flow": "flow"
   },
   "author": "valentin d. pinkman <valentin.d.pinkman@icloud.com",
   "license": "MIT",
@@ -35,6 +36,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
   }
