@@ -1,6 +1,6 @@
 .DS_Store
-.env
 *.log
-dist/
-node_modules/
-.vscode/
+/dist/
+/node_modules/
+/flow-typed/
+/.vscode/

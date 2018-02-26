@@ -9,16 +9,14 @@
     "prettier": "prettier --write \"{src,webpack}/**/*.js\"",
     "lint": "eslint --fix src/",
     "flow": "flow",
+    "flow-typed": "flow-typed install -s --overwrite",
     "test": "jest",
+    "test-update": "npm test -- -u",
     "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.test.js": "jest",
-    "*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "prettier --write", "git add"]
   },
   "author": "valentin d. pinkman <valentin.d.pinkman@icloud.com",
   "license": "MIT",
