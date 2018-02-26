@@ -1,4 +1,7 @@
 {
+  "plugins": [
+    "styled-jsx/babel"
+  ],
   "presets": ["env", "react", "stage-0", "flow"],
   "retainLines": true
 }
