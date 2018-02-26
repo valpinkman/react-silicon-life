@@ -7,8 +7,8 @@ import Title from './common/title'
 const Index = () => <Title>React Silicon Life</Title>
 const Example = () => <Title>React Silicon Example</Title>
 
-const App = (): React.Node => (
-  <div>
+const App = () => (
+  <React.Fragment>
     <nav>
       <Link to="/">Index</Link>
       <Link to="/example">Example</Link>
@@ -17,7 +17,7 @@ const App = (): React.Node => (
       <Route path="/example" component={Example} />
       <Route path="/" component={Index} exact />
     </Switch>
-  </div>
+  </React.Fragment>
 )
 
 export default App
