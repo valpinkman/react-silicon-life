@@ -20,7 +20,7 @@ export default {
     }),
     new HtmlWebpackPlugin({
       title: 'React Silicon Life',
-      template: 'index.html',
+      template: './src/index.html',
     }),
   ],
 
