@@ -4,6 +4,8 @@ import merge from 'webpack-merge'
 import webpackBaseConfig from './base'
 
 export default merge(webpackBaseConfig, {
+  mode: 'development',
+
   entry: ['react-hot-loader/patch'],
 
   devtool: 'inline-source-map',

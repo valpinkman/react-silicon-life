@@ -6,6 +6,8 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 import webpackBaseConfig from './base'
 
 export default merge(webpackBaseConfig, {
+  mode: 'production',
+
   plugins: [
     new UglifyJSPlugin(),
     new webpack.DefinePlugin({

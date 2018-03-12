@@ -1,6 +1,8 @@
 // @flow
 import * as React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
+// $FlowFixMe
+import { hot } from 'react-hot-loader' // eslint-disable-line
 
 import Title from './common/title'
 
@@ -20,4 +22,4 @@ const App = () => (
   </React.Fragment>
 )
 
-export default App
+export default hot(module)(App)

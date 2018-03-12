@@ -8,6 +8,7 @@ type Props = {
 const Title = ({ children }: Props): React.Node => (
   <React.Fragment>
     <h1>{children}</h1>
+
     <style jsx>{`
       h1 {
         font-family: sans-serif;
