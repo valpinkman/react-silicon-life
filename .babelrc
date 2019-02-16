@@ -1,5 +1,0 @@
-{
-  "presets": ["env", "react", "stage-0", "flow"],
-  "plugins": ["transform-runtime", "styled-jsx/babel", "react-hot-loader/babel"],
-  "retainLines": true
-}
