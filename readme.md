@@ -7,7 +7,7 @@ This project does **not** use Server Side Rendering (no we do not always need SS
 
 React Silicon Life comes preconfigured with some pretty 😎 features:
   - [Typescript](https://www.typescriptlang.org/index.html) to make you believe javascript is a typed language
-  - [TSLint](https://https://palantir.github.io/tslint/.org/) because typescript
+  - [ESLint](https://eslint.org/) because tslint is dead and we wanna lint typescript
   - [Prettier](https://prettier.io/) to be sure we follow the same coding style
   - [Jest](https://facebook.github.io/jest) for tests, also because it's good now (not kidding)
   - [parcel](https://parceljs.org/), because **bundling** and **dev server**, out with the old webpack
