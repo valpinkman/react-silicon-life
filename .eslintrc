@@ -15,6 +15,11 @@
     }
   },
   "plugins": ["@typescript-eslint", "react"],
+  "settings": {
+    "import/resolver": {
+      "alias": [["react-native", "react-native-web"]]
+    }
+  },
   "rules": {
     "semi": ["error", "never"],
     "@typescript-eslint/no-var-requires": 0,

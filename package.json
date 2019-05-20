@@ -19,19 +19,24 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "^0.59.8",
+    "react-native-web": "^0.11.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "@types/node": "^11.13.7",
     "@types/react": "^16.8.14",
     "@types/react-dom": "^16.8.4",
+    "@types/react-native": "^0.57.58",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
     "concurrently": "^4.1.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "husky": "^2.1.0",
@@ -42,6 +47,9 @@
     "react-testing-library": "^7.0.0",
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
+  },
+  "alias": {
+    "react-native": "react-native-web"
   },
   "jest": {
     "moduleFileExtensions": [
