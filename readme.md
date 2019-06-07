@@ -1,5 +1,7 @@
 # React Silicon Life
 
+![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=valpinkman/react-silicon-life)](https://dependabot.com)
+
 React Silicon Life is a React boilerplate tailored for static rendering.
 This project does **not** use Server Side Rendering (no we do not always need SSR, yes trust me, I'm an engineer)
 
