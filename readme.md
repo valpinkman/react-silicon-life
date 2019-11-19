@@ -45,7 +45,7 @@ Testing is done using Jest. Start the tests by running `yarn test`. Jest will ge
 
 ### 👾 Extra VSCode Setup
 
-If you need help configuring all the tools talked about here (typscript, tslint, prettier...) with VS Code, you can check my VSCode workspace settings on this [gist](https://gist.github.com/3dc7787503fa4da7887c4b6389f8dbff)
+If you need help configuring all the tools talked about here (typscript, tslint, prettier...) with VS Code, you can check my VSCode workspace settings on this [gist](https://gist.github.com/valpinkman/e487bf057851aa372a320885c946a268)
 
 ## 👻 Why Silicon Life you say ?
 
