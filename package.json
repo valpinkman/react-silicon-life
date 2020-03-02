@@ -29,7 +29,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "@types/testing-library__react": "^9.1.2",
-    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.14.0",
     "concurrently": "^5.0.2",
     "eslint": "^6.8.0",
